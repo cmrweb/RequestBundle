@@ -98,8 +98,24 @@ class MyRequestService extends AbstractApiRequest
     }
 ```
 
+apiRequest methods
+
+```php
+    public function post(string $route, ?array $options = []): static;
+    public function get(string $route, ?array $context = null, ?array $options = []): static;
+    public function getCurl(string $route, array $context, ?array $auth = null): static;
+```
+
 Get your API key from parameters
 
 ```php
-$this->param->get('cmrweb.api.key');
+protected function apiRequest(string $request, ?array $context = null): array
+{
+    return $this->get($type, $context, [
+            'headers' => [
+                'Content-Type' => 'application/json',
+                'MY-API-KEY' => $this->param->get('cmrweb.api.key')
+            ]
+        ])->getData();
+}
 ```
