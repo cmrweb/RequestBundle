@@ -1,0 +1,38 @@
+{
+    "name": "cmrweb/request-bundle",
+    "description": "Symfony request hepler bundle",
+    "type": "symfony-bundle",
+    "require": {
+        "symfony/flex": "^2.10",
+        "symfony/http-client": "^7.3",
+        "symfony/framework-bundle": "^7.3",
+        "phpdocumentor/reflection-docblock": "^5.6",
+        "phpstan/phpdoc-parser": "^2.3",
+        "symfony/property-access": "^7.3",
+        "symfony/property-info": "^7.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cmrweb\\RequestBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cmrweb",
+            "email": "tykrastagames@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
+        }
+    },
+    "scripts": {
+        "auto-scripts": {
+            "cache:clear": "symfony-cmd",
+            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+        }
+    }
+}
