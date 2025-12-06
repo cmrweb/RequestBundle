@@ -4,12 +4,12 @@
     "type": "symfony-bundle",
     "require": {
         "symfony/flex": "^2.10",
-        "symfony/http-client": "^7.3",
-        "symfony/framework-bundle": "^7.3",
+        "symfony/http-client": "^8.0",
+        "symfony/framework-bundle": "^8.0",
         "phpdocumentor/reflection-docblock": "^5.6",
         "phpstan/phpdoc-parser": "^2.3",
-        "symfony/property-access": "^7.3",
-        "symfony/property-info": "^7.3"
+        "symfony/property-access": "^8.0",
+        "symfony/property-info": "^8.0"
     },
     "license": "MIT",
     "autoload": {
