@@ -17,7 +17,7 @@ abstract class AbstractApiRequest implements ApiRequestInterface
         protected readonly ParameterBagInterface $param
     ) {}
 
-    abstract protected function apiRequest(string $type, ?array $context = null): array;
+    abstract protected function apiRequest(string $type, ?array $context = null): mixed;
 
     protected function getContent(): string
     {
